@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er Bank</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<h1 class="text-5xl text-center">Let's get some<span class="font-semibold text-purple-600"> MONEEEEY</span>!!!</h1>
+
+<section class="m-20">
+    <div class="grid grid-cols-3 gap-2 m-auto ">
+
+        <div class="bg-green-500 py-8 px-6 rounded-lg text-white text-3xl mt-12 m-5">
+            <h1>Deposit</h1>
+            <h1 >$<span id="deposit-amount">00</span></h1>
+        </div>
+        <div class="bg-gray-500 py-8 px-6 rounded-lg text-white text-3xl mt-12 m-5">
+            <h1>Withdraw</h1>
+            <h1>$<span id="withdraw-amount">00</span></h1>
+        </div>
+        <div class="bg-pink-500 py-8 px-6 rounded-lg text-white text-3xl mt-12 m-5">
+            <h1>Balance</h1>
+            <h1>$<span id="total-balance">1240</span></h1>
+        </div>
+
+    </div>
+
+
+    <div>
+        <div class="grid grid-cols-2 gap-2  ">
+
+            <div class="bg-sky-500 py-8 px-6 rounded-lg  text-3xl mt-12 m-5">
+                <h1>Please Deposit</h1>
+                <input class="w-8/12 py-2 block px-5 my-4 mx-6" type="number" name="" id="deposit-field" placeholder="$ amount you want to deposit">        
+                
+                <button id="btn-deposit" class="bg-amber-400 py-2 px-5 ml-7 rounded-md hover:bg-sky-700 hover:text-white">Deposit</button>
+
+            </div>
+
+
+            <div class="bg-violet-500 py-8 px-6 rounded-lg  text-3xl mt-12 m-5">
+                <h1>Please Withdraw</h1>
+                
+                <input class="w-8/12 py-2 block px-5 my-4 mx-6" type="number" name="" id="withdraw-field" placeholder="$ amount you want to Withdraw">  
+
+                <button id="btn-withdraw" class="bg-amber-400 py-2 px-5 ml-7 rounded-md hover:bg-sky-700 hover:text-white">Withdraw</button>
+             </div>
+        </div>
+
+
+</section>
+
+
+
+
+
+<script src="./deposit.js"></script>
+<script src="./withdraw.js"></script>
+</body>
+
+</html>
